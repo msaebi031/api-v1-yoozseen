@@ -1,20 +1,20 @@
 # YoozSeen API Client
 
-**YoozSeen** یک کلاس ساده برای تعامل با [YoozSeen API](https://api.yoozseen.ir) است.  
-این کلاس از تمام توابع مهم API پشتیبانی می‌کند:  
+**YoozSeen** is a simple class to interact with the [YoozSeen API](https://api.yoozseen.ir).  
+This class supports all main API functions:
 
-- مشاهده موجودی (`balance`)  
-- دریافت لیست سرویس‌ها (`services`)  
-- بررسی وضعیت سفارش (`status`)  
-- ایجاد سفارش‌های مختلف (`addOrder`) شامل:
-  - Boost لینک‌ها
-  - فالوور / اکانت‌ها
-  - لایک‌ها / Votes
+- Check balance (`balance`)
+- Get list of services (`services`)
+- Check order status (`status`)
+- Create various types of orders (`addOrder`) including:
+  - Boost links
+  - Followers / Accounts
+  - Likes / Votes
   - Reactions
 
 ---
 
-## 🚀 نصب و راه‌اندازی
+## 🚀 Installation
 
 ### Node.js / JavaScript
 
@@ -27,7 +27,7 @@ import { YoozSeen } from "./YoozSeen";
 
 const api = new YoozSeen("YOUR_API_KEY");
 
-// دریافت موجودی
+// Get balance
 const balance = await api.balance();
 console.log(balance);
 ```
@@ -62,66 +62,73 @@ java YoozSeen
 
 ---
 
-## 📦 استفاده از `addOrder`
+## 📦 Using `addOrder`
 
-### Boost لینک‌ها
+### Boost Links
 
 ```js
 api.addOrder({
-    service: "id service",
-    link: "link boost",
-    quantity: 100
-})
+  service: "id service",
+  link: "link boost",
+  quantity: 100,
+});
 ```
 
 ### Likes/Votes
 
 ```js
 api.addOrder({
-    service: "id service",
-    link: "@username",
-    quantity: 50,
-    row: 1,
-    column: 1,
-    speed: 0,
-    startdelay: 0,
-    interval: 0
-})
+  service: "id service",
+  link: "@username",
+  quantity: 50,
+  row: 1,
+  column: 1,
+  speed: 0,
+  startdelay: 0,
+  interval: 0,
+});
 ```
 
 ### Reactions
 
 ```js
 api.addOrder({
-    service: "id service",
-    link: "post link",
-    quantity: 30,
-    reaction: "👍",
-    speed: 0,
-    startdelay: 0,
-    interval: 0
-})
+  service: "id service",
+  link: "post link",
+  quantity: 30,
+  reaction: "👍",
+  speed: 0,
+  startdelay: 0,
+  interval: 0,
+});
 ```
 
 ---
 
-## 🌟 ویژگی‌ها
+## 🌟 Features
 
-- پشتیبانی از تمام توابع مهم YoozSeen API  
-- یک کلاس ساده و آماده استفاده برای JS, PHP, Python, Java  
-- بدون نیاز به تنظیمات پیچیده، فقط کافی است `API Key` خود را جایگذاری کنید  
-
----
-
-## 📌 نکات
-
-1. حتماً `API Key` خود را از [داشبورد YoozSeen](https://api.yoozseen.ir) دریافت کنید.  
-2. برای اجرای Java، نام فایل باید `YoozSeen.java` باشد.  
-3. مقادیر پارامترها (مثل `link`, `quantity`) باید مطابق نوع سرویس انتخاب شوند.  
+- Supports all main YoozSeen API functions
+- Simple and ready-to-use class for JS, PHP, Python, and Java
+- No complex setup required, just use your `API Key`
 
 ---
 
-## 🔗 لینک‌ها
+## 📌 Notes
 
-- وبسایت YoozSeen: [https://yoozseen.ir](https://yoozseen.ir)  
-- مستندات API: [https://api.yoozseen.ir/docs](https://api.yoozseen.ir/docs)
+1. Make sure to get your `API Key` from the [YoozSeen Dashboard](https://api.yoozseen.ir).
+2. For Java, the file name must be `YoozSeen.java`.
+3. Parameter values (like `link`, `quantity`) must match the selected service type.
+4. If you have any questions, you can join this Telegram group and ask: [https://t.me/api_yoozseen](https://t.me/api_yoozseen)
+
+---
+
+## 🔗 Links
+
+- YoozSeen Website: [https://yoozseen.ir](https://yoozseen.ir)
+- API Documentation: [https://api.yoozseen.ir/docs](https://api.yoozseen.ir/docs)
+
+---
+
+## 📝 About
+
+This project provides a unified and easy-to-use client for YoozSeen API in multiple languages (JS, Python, PHP, Java) to simplify automating orders and checking statuses.
