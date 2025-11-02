@@ -1,6 +1,6 @@
 # YoozSeen API Client
 
-**YoozSeen** is a simple class to interact with the [YoozSeen API](https://api.yoozseen.ir).  
+**YoozSeen** is a simple class to interact with the [YoozSeen API](https://docs.yoozseen.ir).  
 This class supports all main API functions:
 
 - Check balance (`balance`)
@@ -119,7 +119,7 @@ api.addOrder({
 
 ## 📌 Notes
 
-1. Make sure to get your `API Key` from the [YoozSeen Dashboard](https://api.yoozseen.ir).
+1. Make sure to get your `API Key` from the [YoozSeen Dashboard](https://docs.yoozseen.ir/methods/get-api-keys).
 2. Parameter values (like `link`, `quantity`) must match the selected service type.
 3. If you have any questions, you can join this Telegram group and ask: [https://t.me/api_yoozseen](https://t.me/api_yoozseen)
 
@@ -128,4 +128,4 @@ api.addOrder({
 ## 🔗 Links
 
 - YoozSeen Website: [https://yoozseen.ir](https://yoozseen.ir)
-- API Documentation: [https://api.yoozseen.ir/docs](https://api.yoozseen.ir/docs)
+- API Documentation: [https://docs.yoozseen.ir](https://docs.yoozseen.ir)
