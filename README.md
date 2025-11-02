@@ -7,10 +7,14 @@ This class supports all main API functions:
 - Get list of services (`services`)
 - Check order status (`status`)
 - Create various types of orders (`addOrder`) including:
-  - Boost links
-  - Followers / Accounts
+  - View
   - Likes / Votes
   - Reactions
+  - Stars
+  - Boost links
+  - Followers / Accounts
+  - Member Telegram
+    ,...
 
 ---
 
@@ -116,9 +120,8 @@ api.addOrder({
 ## 📌 Notes
 
 1. Make sure to get your `API Key` from the [YoozSeen Dashboard](https://api.yoozseen.ir).
-2. For Java, the file name must be `YoozSeen.java`.
-3. Parameter values (like `link`, `quantity`) must match the selected service type.
-4. If you have any questions, you can join this Telegram group and ask: [https://t.me/api_yoozseen](https://t.me/api_yoozseen)
+2. Parameter values (like `link`, `quantity`) must match the selected service type.
+3. If you have any questions, you can join this Telegram group and ask: [https://t.me/api_yoozseen](https://t.me/api_yoozseen)
 
 ---
 
@@ -126,9 +129,3 @@ api.addOrder({
 
 - YoozSeen Website: [https://yoozseen.ir](https://yoozseen.ir)
 - API Documentation: [https://api.yoozseen.ir/docs](https://api.yoozseen.ir/docs)
-
----
-
-## 📝 About
-
-This project provides a unified and easy-to-use client for YoozSeen API in multiple languages (JS, Python, PHP, Java) to simplify automating orders and checking statuses.
